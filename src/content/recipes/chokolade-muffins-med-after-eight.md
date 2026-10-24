@@ -1,0 +1,47 @@
+---
+title: "Chokolade muffins med After Eight"
+slug: chokolade-muffins-med-after-eight
+published: 2013-04-13
+tempC: 180
+timeMin: "20"
+intro: "Kakao i dejen og et stykke mintchokolade i midten. Minten lægges ind som kerne, så den smelter ud i den varme muffin i stedet for at brænde på toppen."
+ingredients:
+  - amount: "100"
+    unit: "g"
+    name: "smør"
+  - amount: "100"
+    unit: "g"
+    name: "mørk chokolade"
+  - amount: "1.5"
+    unit: "stk"
+    name: "dl sukker"
+  - amount: "3"
+    unit: "stk"
+    name: "æg"
+  - amount: "1.5"
+    unit: "stk"
+    name: "dl hvedemel"
+  - amount: "1.5"
+    unit: "stk"
+    name: "tsk bagepulver"
+  - amount: "1/2"
+    unit: "dl"
+    name: "kakao"
+  - amount: "12"
+    unit: "stk"
+    name: "After Eight"
+steps:
+  - "Start med at forvarme ovnen til 180 grader"
+  - "Bræk chokoladen i mindre stykker og smelt sammen med smørret i et vandbad"
+  - "Tag skålen op af vandbadet når al chokoladen og smørret er smeltet"
+  - "Tilsæt æggene og pisk godt"
+  - "Tilsæt sukker og pisk godt igen"
+  - "Bland mel, kakao og bagepulver sammen i en anden skål og hæld det sammen med de våde ingredienser"
+  - "Bland godt"
+  - "Sæt 12 muffinsforme på en bageplade"
+  - "Hæld cirka én spsk dej i hver form"
+  - "Læg en After Eight ovenpå"
+  - "Og afslut igen med én spsk dej, så After Eight'en bliver lukket inde"
+  - "Sæt dem i ovnen på midterste rille og bag dem i cirka 20 minutter"
+tips:
+---

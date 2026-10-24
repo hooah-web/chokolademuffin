@@ -1,0 +1,83 @@
+# Cloudflare Pages redirects — genereret 2026-10-24
+# Format: <fra> <til> <status>
+
+# --- gamle slugs (WordPress 301'er dem i dag) ---
+/chokolade-muffins-med-chokoladelinser/ /chokolade-muffins-med-chokoladeknapper/ 301
+/chokolademuffins-med-dobbel-chokolade/ /chokolademuffins-med-dobbelt-chokolade/ 301
+/chewy-toffee-muffins-med-krokant/ /muffins-til-dig-der-ikke-kan-tale-aeg/ 301
+/bananmuffins-med-noedder/ /bananmuffins-med-nodder/ 301
+/simpel-opskrift-pa-bananmuffins/ /simpel-opskrift-pa-banan-muffins/ 301
+
+# --- junk-sider og nedlagte kategorier ---
+/test/ / 301
+/sogeresultater/ / 301
+/velkommen-mobil/ / 301
+/ikke-kategoriseret/ / 301
+/chokolade-muffins/page/* / 301
+/andre-slags-muffins/page/* / 301
+/chokolademuffins-opskrifter/page/* / 301
+/chokolade-muffins/ / 301
+/andre-slags-muffins/ / 301
+/chokolademuffins-opskrifter/ / 301
+/576/ / 301
+/alle-muffins/ / 301
+/andre-muffins/ / 301
+/feed/ / 301
+/comments/feed/ / 301
+
+# --- attachment-sider -> den overordnede opskrift ---
+/chokolademuffins-med-banan/chokolademuffins-med-banan-2/ /chokolademuffins-med-banan/ 301
+/chokolademuffins-med-rigtig-chokolade/chocolate-muffins-with-chocolate-sauce/ /chokolademuffins-med-rigtig-chokolade/ 301
+/chokolademuffins-med-nodder/chokolademuffins-med-nodder-2/ /chokolademuffins-med-nodder/ 301
+/chokolademuffins-til-2-personer/chokolademuffins-til-2-personer-3/ /chokolademuffins-til-2-personer/ 301
+/chokolademuffins-med-dobbelt-chokolade/chokolademuffins-med-dobbelt-chokolade-2/ /chokolademuffins-med-dobbelt-chokolade/ 301
+/muffins-med-snickerschokolade-og-peanutbutter/muffins-med-snickerschokolade-og-peanutbutter-2/ /muffins-med-snickerschokolade-og-peanutbutter/ 301
+/muffins-med-hvid-chokoladestykker/muffins-med-hvid-chokoladestykker/ /muffins-med-hvid-chokoladestykker/ 301
+/chokolademuffins-til-2-personer/muffins-til-2/ /chokolademuffins-til-2-personer/ 301
+/blabaermuffins/blabaermuffins/ /blabaermuffins/ 301
+/bornemuffins/bornemuffins-2/ /bornemuffins/ 301
+/amerikanske-muffins-med-ribs-og-chokolade/amerikanske-muffins-med-ribs-og-chokolade-2/ /amerikanske-muffins-med-ribs-og-chokolade/ 301
+/vaniljemuffins-med-nutellafyld/vaniljemuffins-med-nutellafyld/ /vaniljemuffins-med-nutellafyld/ 301
+/aeble-og-kanelmuffins-med-drys/aeble-og-kanelmuffins-med-drys-2/ /aeble-og-kanelmuffins-med-drys/ 301
+/rabarbermuffins/rabarbermuffins/ /rabarbermuffins/ 301
+/chokolademuffins-med-amaretto/chokolademuffins-med-amaretto/ /chokolademuffins-med-amaretto/ 301
+/blabaermuffins-med-crumble/blabaermuffins-med-crumble/ /blabaermuffins-med-crumble/ 301
+/muffins-til-dig-der-ikke-kan-tale-aeg/chewy-toffee-muffins-med-krokant/ /muffins-til-dig-der-ikke-kan-tale-aeg/ 301
+/banan-og-citronmuffins/banan-og-citronmuffins/ /banan-og-citronmuffins/ 301
+/chokolademuffins-med-appelsinkrokant/chokolademuffins-med-appelsinkrokant-2/ /chokolademuffins-med-appelsinkrokant/ 301
+/oreo-muffins/muffins-med-oreo/ /oreo-muffins/ 301
+/chokolade-muffins-med-chokoladeknapper/chokolade-muffins-med-masser-af-chokoladeknapper/ /chokolade-muffins-med-chokoladeknapper/ 301
+/chokolademuffins-med-banan-og-nutella/chokolade-muffins-med-nutella-og-banan/ /chokolademuffins-med-banan-og-nutella/ 301
+/chokolademuffins-med-banan/muffins-med-banan-og-chokolade/ /chokolademuffins-med-banan/ 301
+/chokolade-muffins-med-after-eight/chokolade-muffins-med-dejlig-after-eight/ /chokolade-muffins-med-after-eight/ 301
+/chokolade-muffins-med-3-slags-chokolade/chokolade-muffins-med-tre-slags-chokolade/ /chokolade-muffins-med-3-slags-chokolade/ 301
+/chokolademuffins-med-dumle/muffins-dumle/ /chokolademuffins-med-dumle/ 301
+/chokolademuffins-med-dobbelt-chokolade/dobbelt-chokolade-muffins/ /chokolademuffins-med-dobbelt-chokolade/ 301
+/chokolade-muffins-med-kokos/konica-minolta-digital-camera/ /chokolade-muffins-med-kokos/ 301
+/chokolademuffins-med-kirsebaer/muffins-kirsebaer/ /chokolademuffins-med-kirsebaer/ 301
+/hvidchokolademuffins-med-appelsin/muffins-med-hvidchokolade-og-appelsin/ /hvidchokolademuffins-med-appelsin/ 301
+/snickers-muffins/muffins-snickers/ /snickers-muffins/ 301
+/chokolade-cheesecake-muffins/chokolade-muffins-med-cheesecake/ /chokolade-cheesecake-muffins/ 301
+/brownie-muffins-ii/muffins-brownie/ /brownie-muffins-ii/ 301
+/muffins-med-hvid-chokoladestykker/sony-dsc/ /muffins-med-hvid-chokoladestykker/ 301
+/muffins-med-chokolade-banan-og-nodder/chokolade-banan-og-nodder-muffins/ /muffins-med-chokolade-banan-og-nodder/ 301
+/brownie-muffins/muffins-brownie-2/ /brownie-muffins/ 301
+/ben-and-jerrys-muffins/sony-dsc-2/ /ben-and-jerrys-muffins/ 301
+/chokolademuffins-med-oreo-og-hindbaer/chokolade-muffins-med-hindbaer-og-oreo/ /chokolademuffins-med-oreo-og-hindbaer/ 301
+/muffins-med-snickerschokolade-og-peanutbutter/snicker-schokolade-og-peanutbutter-muffins/ /muffins-med-snickerschokolade-og-peanutbutter/ 301
+/chokolademuffins-med-bailey/bailey-muffins/ /chokolademuffins-med-bailey/ 301
+/glutenfri-chokolademuffins/glutenfri-chokolademuffins-2/ /glutenfri-chokolademuffins/ 301
+/aeblemuffins/aeble-muffins/ /aeblemuffins/ 301
+/bananmuffins-med-karamel/bananmuffins-med-karamel/ /bananmuffins-med-karamel/ 301
+/regnbuemuffins/regnbuemuffins/ /regnbuemuffins/ 301
+/gulerodsmuffins/gulerodsmuffins/ /gulerodsmuffins/ 301
+/bananmuffins-med-cornflakes/cornflakes-banan-muffins/ /bananmuffins-med-cornflakes/ 301
+/citronmuffins/citronmuffins/ /citronmuffins/ 301
+/tiramisu-muffins/tiramisu-muffins/ /tiramisu-muffins/ 301
+/muffins-uden-aeg/sony-dsc-3/ /muffins-uden-aeg/ 301
+/muffins-med-paere/paeremuffins/ /muffins-med-paere/ 301
+/simpel-opskrift-pa-banan-muffins/simpel-opskrift-paa-bananmuffins/ /simpel-opskrift-pa-banan-muffins/ 301
+/simpel-opskrift-pa-banan-muffins/simpel-opskrift-paa-bananmuffins-2/ /simpel-opskrift-pa-banan-muffins/ 301
+/bananmuffins-med-kanel/bananmuffinskanel/ /bananmuffins-med-kanel/ 301
+/bananmuffins-med-nodder/bananmuffinsnodder/ /bananmuffins-med-nodder/ 301
+/bananmuffins-med-chokolade/banana-muffins/ /bananmuffins-med-chokolade/ 301

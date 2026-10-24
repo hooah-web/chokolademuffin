@@ -1,0 +1,50 @@
+---
+title: "Chokolade muffins med kirsebær"
+slug: chokolademuffins-med-kirsebaer
+published: 2012-10-04
+yield: 12
+tempC: 200
+timeMin: "20-25"
+intro: "Kirsebærene afstenes og røres forsigtigt i dejen sammen med chokolade og et par dråber rom. Bages ved 200 °C i 20-25 minutter."
+ingredients:
+  - amount: "1.25"
+    unit: "stk"
+    name: "dl sukker"
+  - amount: "100"
+    unit: "g"
+    name: "smør"
+  - amount: "2"
+    unit: "stk"
+    name: "æg"
+  - amount: "100"
+    unit: "g"
+    name: "mandler, hakkede meget fint til mel"
+  - amount: "50"
+    unit: "g"
+    name: "chokoladestykker"
+  - amount: "1"
+    unit: "stk"
+    name: "par dråber rom"
+  - amount: "0.75"
+    unit: "stk"
+    name: "dl mel"
+  - amount: "1"
+    unit: "tsk"
+    name: "bagepulver"
+  - amount: "150"
+    unit: "g"
+    name: "friske kirsebær"
+steps:
+  - "Forvarm ovnen til 200 grader"
+  - "Pisk sukker og smør til det er luftigt"
+  - "Røre æg i, ét ad gangen"
+  - "Tilsæt finthakkede mandler, chokoladestykker og rom"
+  - "Rør rundt indtil alt er godt blandet"
+  - "Rør mel og bagepulver i"
+  - "Tag stenene ud af kirsebærene"
+  - "Hæld nu kirsebærene i dejen og rør forsigtigt rundt"
+  - "Hæld dejen i muffinsforme"
+  - "Bag dem cirka i 20-25 minutter"
+  - "Pynt med chokolade glasur og kirsebær"
+tips:
+---

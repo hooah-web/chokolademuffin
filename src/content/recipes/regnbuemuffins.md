@@ -1,0 +1,46 @@
+---
+title: "Regnbuemuffins"
+slug: regnbuemuffins
+published: 2013-06-29
+tempC: 200
+intro: "Dejen deles i seks portioner i forskellige farver og fyldes lagvis i formene, så lagene stadig ses i den bagte muffin."
+ingredients:
+  - amount: "2"
+    unit: "stk"
+    name: "æg"
+  - amount: "2"
+    unit: "dl"
+    name: "sukker"
+  - amount: "3"
+    unit: "dl"
+    name: "mel"
+  - amount: "1.5"
+    unit: "stk"
+    name: "tsk bagepulver"
+  - amount: "2"
+    unit: "spsk"
+    name: "vaniljesukker"
+  - amount: "1.5"
+    unit: "stk"
+    name: "dl mælk"
+  - amount: "2"
+    unit: "spsk"
+    name: "smeltet smør"
+  - amount: "5"
+    unit: "stk"
+    name: "forskellige frugtfarver"
+steps:
+  - "Pisk æg og sukker luftigt og tilsæt mælken"
+  - "Bland de tørre ingredienser sammen og tilsæt derefter de våde ingredienser (pas lidt på med bagepulveret - du får ikke de sjove skarpe aftegninger hvis dine muffins hæver for meget i ovnen)"
+  - "Fordel dejen i fem skåle"
+  - "Tilsæt fem forskellige farver"
+  - "Bland en sidste skål med alle fem farver, så du har seks lige store portioner i forskellige farver"
+  - "Fyld herefter 1/6 med den brogede dej (alle farver)"
+  - "1/6 med en anden farve"
+  - "1/6 med en tredje"
+  - "1/6 med en fjerde"
+  - "1/6 med en femte"
+  - "1/6 med en sjette"
+  - "Herefter bages de ca. 10 minutter ved 200 grader, pyntes og serveres"
+tips:
+---

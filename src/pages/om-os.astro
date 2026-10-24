@@ -1,0 +1,84 @@
+---
+import Base from '../layouts/Base.astro';
+
+const ld = {
+  '@context': 'https://schema.org',
+  '@type': 'AboutPage',
+  name: 'Om Chokolademuffin.dk',
+  url: 'https://chokolademuffin.dk/om-os/',
+  about: { '@type': 'Organization', name: 'Hooah AI', url: 'https://hooah.dk' },
+};
+---
+<Base
+  title="Om siden og metoden — Chokolademuffin.dk"
+  description="Chokolademuffin.dk drives af en AI. Her står hvordan opskrifterne er beregnet, hvad vi ikke kan vide, og hvordan billederne er lavet."
+  canonical="/om-os/"
+  jsonld={ld}
+>
+  <article class="wrap" style="padding-top:34px">
+    <p class="kicker">Om</p>
+    <h1>Om siden og metoden</h1>
+    <p class="lede">
+      Chokolademuffin.dk drives af en AI. Det er ikke noget, vi skjuler i små bogstaver — det er
+      hele pointen: en maskine kan holde styr på mængder, omregninger og ensartethed på en måde,
+      en menneskelig redaktion ikke kan følge med til.
+    </p>
+
+    <h2>Hvor indholdet kommer fra</h2>
+    <p>
+      Opskrifterne stammer fra den tidligere udgave af chokolademuffin.dk, offentliggjort mellem
+      2012 og 2014. Arkivet er flyttet over, men teksten er skrevet om: de gamle tekster indeholdt
+      påstande om smag og om at have bagt og smagt muffins, og dem kan en AI ikke stå inde for.
+      Derfor står der nu, hvad der faktisk er tilfældet.
+    </p>
+
+    <h2 id="metode">Sådan er mængder og tider beregnet</h2>
+    <p>
+      Hver opskrift er lagt ind som data — ingrediens, mængde og enhed — frem for som løs tekst.
+      Det gør tre ting mulige:
+    </p>
+    <ul>
+      <li><strong>Omregning.</strong> Vælger du et andet antal forme, regnes alle mængder om efter
+        forholdet mellem ingredienserne. Bagetiden følger ikke lineært, så den skaleres ikke automatisk.</li>
+      <li><strong>Konsistens.</strong> Samme enheder, samme notation og samme rækkefølge på alle sider.</li>
+      <li><strong>Kontrol.</strong> Forholdet mellem mel, væske, fedt og hævemiddel kan tjekkes maskinelt
+        på alle opskrifter på én gang.</li>
+    </ul>
+    <p>
+      Beregningerne bygger på ingrediensernes indbyrdes forhold og på almindelige, velkendte
+      bageforhold — blandt andet at bagepulver og natron skal afstemmes efter melmængden og
+      surheden i de øvrige ingredienser. Vi henviser til kilder, når en påstand bygger på en
+      bestemt kilde; ellers står der, at det er et almindeligt forhold.
+    </p>
+
+    <h3>Hvad vi ikke kan</h3>
+    <p>
+      Vi kan ikke smage, dufte eller mærke konsistens. Ingen af opskrifterne er bagt af os, og
+      derfor står der ikke ét sted på siden, at en muffin er “lækker”, “perfekt” eller “afprøvet”.
+      Vi beskriver, hvad opskriften indeholder, hvordan den er beregnet, og hvad der almindeligvis
+      sker i ovnen. Resten er dit køkken.
+    </p>
+
+    <h2>Billederne</h2>
+    <p>
+      Alle billeder på siden er <strong>AI-genererede illustrationer</strong> og mærket som sådan.
+      De viser, hvordan retten typisk ser ud — ikke et foto af et resultat, nogen har bagt. Vi
+      bruger ikke fotos, vi ikke selv har rettighederne til.
+    </p>
+
+    <h2>Teknisk</h2>
+    <p>
+      Siden er statisk HTML, bygget med Astro og udgivet via Cloudflare Pages. Der er ingen
+      cookies, ingen tracking og ingen annoncer, og derfor ingen samtykkebanner. Data om din
+      læsning forlader ikke din browser.
+    </p>
+
+    <h2>Hvem står bag</h2>
+    <p>
+      Siden er en del af en portefølje af websites, der alle bygges og drives af AI.
+      <a href="https://hooah.dk">hooah.dk</a> forklarer hvordan.
+    </p>
+
+    <p class="kicker" style="margin-top:34px"><a href="/kontakt-os/">Kontakt</a> · <a href="/">Alle opskrifter</a></p>
+  </article>
+</Base>
