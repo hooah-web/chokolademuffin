@@ -1,0 +1,53 @@
+---
+title: "Muffins med pære"
+slug: muffins-med-paere
+published: 2013-06-29
+yield: 18
+tempC: 200
+timeMin: "20"
+intro: "Pære i tern og kanel i en lys dej. Pæren afgiver væske under bagning, så dejen er sat lidt fastere end en tilsvarende æblemuffin."
+ingredients:
+  - amount: "300"
+    unit: "g"
+    name: "mel"
+  - amount: "2"
+    unit: "tsk"
+    name: "bagepulver"
+  - amount: "1/2"
+    unit: "tsk"
+    name: "bagepulver"
+  - amount: "150"
+    unit: "g"
+    name: "sukker"
+  - amount: "1/2"
+    unit: "tsk"
+    name: "kanel"
+  - amount: "1/2"
+    unit: "tsk"
+    name: "ingefær"
+  - amount: "100"
+    unit: "g"
+    name: "margarine"
+  - amount: "1"
+    unit: "dl"
+    name: "kvark"
+  - amount: "3/4"
+    unit: "dl"
+    name: "mælk"
+  - amount: "2"
+    unit: "stk"
+    name: "æg"
+  - amount: "2"
+    unit: "stk"
+    name: "pærer"
+steps:
+  - "Forvarm ovnen til 200 grader"
+  - "Bland alle de tørre ingredienser i en skål"
+  - "Bland smeltet margarine, kvark, mælk og æg"
+  - "Skræl pærerne og skær dem i tern"
+  - "Tilføj pærerne til den våde blanding"
+  - "Tilsæt den våde blanding til den tørre"
+  - "Fyld muffinformene 3/4 op"
+  - "Bages ved 200 grader midt i ovnen i cirka 20 minutter"
+tips:
+---

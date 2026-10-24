@@ -1,0 +1,45 @@
+---
+title: "Bananmuffins med nødder"
+slug: bananmuffins-med-nodder
+published: 2014-04-01
+tempC: 200
+timeMin: "20"
+intro: "Banan og cashewnødder med et strejf af kanel. Nødderne hakkes groft, så de stadig giver bid i den bagte muffin."
+ingredients:
+  - amount: "100"
+    unit: "g"
+    name: "græskarkerner"
+  - amount: "100"
+    unit: "g"
+    name: "solsikkekerner"
+  - amount: "50"
+    unit: "g"
+    name: "sesamfrø"
+  - amount: "200"
+    unit: "g"
+    name: "usaltede cashewnødder"
+  - amount: "2"
+    unit: "stk"
+    name: "modne bananer"
+  - amount: "2"
+    unit: "stk"
+    name: "æg"
+  - amount: "2"
+    unit: "tsk"
+    name: "kanel"
+  - amount: "1"
+    unit: "stk"
+    name: "knsp. salt"
+  - amount: "75"
+    unit: "g"
+    name: "rosiner"
+  - amount: "½"
+    unit: "dl"
+    name: "vand"
+steps:
+  - "Start med at komme alle nødder og gerne(med sesamfrø undtaget) i en blender, og lad det køre til det er hakket"
+  - "Tilsæt dernæst resten af ingredienserne, og lad det køre sammen til en fast dej"
+  - "Hæld derefter dejen i muffinsforme, og bag det ved 200 grader i ca. 20 minutter"
+  - "Husk at tjekke om de er gennembagte inden de tages ud af ovnen"
+tips:
+---

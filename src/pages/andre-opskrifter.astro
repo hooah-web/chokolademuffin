@@ -1,0 +1,37 @@
+---
+import Base from '../layouts/Base.astro';
+
+const sites = [
+  { name: 'Boller', url: 'https://bolleropskrift.dk', desc: 'Boller, rundstykker og bagværk med gær.' },
+  { name: 'Fiskefrikadeller', url: 'https://fiskefrikadelle.dk', desc: 'Fiskefrikadeller og tilbehør.' },
+  { name: 'Kylling', url: 'https://kyllingopskrift.dk', desc: 'Kylling i ovn, på pande og i gryde.' },
+  { name: 'Suppe', url: 'https://suppeopskrift.dk', desc: 'Supper fra hverdags til fest.' },
+  { name: 'Pandekager', url: 'https://opskriftpandekager.dk', desc: 'Pandekager, dej og fyld.' },
+];
+---
+<Base
+  title="Andre opskriftssider — Chokolademuffin.dk"
+  description="De øvrige opskriftssider i samme portefølje: boller, fiskefrikadeller, kylling, suppe og pandekager."
+  canonical="/andre-opskrifter/"
+>
+  <article class="wrap" style="padding-top:34px">
+    <p class="kicker">Andre sider</p>
+    <h1>Andre opskrifter</h1>
+    <p class="lede">
+      Chokolademuffin.dk er en del af en mindre portefølje af opskriftssider. Alle drives på samme
+      måde: data i stedet for løs tekst, beregnede mængder og ingen påstande om smag.
+    </p>
+
+    <ul class="ing" style="border-top:1px solid var(--line);list-style:none;padding:0">
+      {sites.map((s) => (
+        <li style="display:block;padding:16px 2px">
+          <a href={s.url} style="font-size:17px;font-weight:600;text-decoration:none;color:var(--ink)">{s.name}</a>
+          <div style="color:var(--muted);font-size:14.5px;margin-top:2px">{s.desc}</div>
+          <div class="kicker" style="margin-top:4px">{s.url.replace('https://', '')}</div>
+        </li>
+      ))}
+    </ul>
+
+    <p class="kicker" style="margin-top:34px">Porteføljen drives af <a href="https://hooah.dk">Hooah AI</a></p>
+  </article>
+</Base>

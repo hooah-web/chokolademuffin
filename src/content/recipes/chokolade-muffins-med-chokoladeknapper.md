@@ -1,0 +1,51 @@
+---
+title: "Chokolade muffins med chokoladeknapper"
+slug: chokolade-muffins-med-chokoladeknapper
+published: 2012-09-29
+yield: 10
+tempC: 190
+timeMin: "20-25"
+intro: "Tolv ingredienser, én skål til det tørre og én til det våde. Beregnet til 10 muffins ved 190 °C i 20-25 minutter."
+ingredients:
+  - amount: "250"
+    unit: "g"
+    name: "mel"
+  - amount: "2"
+    unit: "tsk"
+    name: "bagepulver"
+  - amount: "1"
+    unit: "tsk"
+    name: "natron"
+  - amount: "4"
+    unit: "spsk"
+    name: "usødet kakaopulver"
+  - amount: "½"
+    unit: "tsk"
+    name: "salt"
+  - amount: "100"
+    unit: "g"
+    name: "sukker"
+  - amount: "75"
+    unit: "g"
+    name: "chokoladeknapper"
+  - amount: "1"
+    unit: "stk"
+    name: "stort æg"
+  - amount: "1"
+    unit: "tsk"
+    name: "vaniljesukker"
+  - amount: "250"
+    unit: "ml"
+    name: "mælk"
+  - amount: "90"
+    unit: "ml"
+    name: "olie"
+steps:
+  - "Forvarm ovnen til 190° (varmluftsovn 170°)"
+  - "Put 10 papir muffinsforme i en silikone muffinsbakke."
+  - "Sigt mel, bagepulver, natron, kakaopulver og salt i en stor skål. Rør sukker og chokoladeknapper i."
+  - "Pisk æg, vanilje ekstrakt og mælk sammen . Tilsæt olie og rør rundt for at blande."
+  - "Hæld de våde ingredienser i de tørre ingredienser og rør rundt indtil de blandes til én masse. Du må ikke piske massen på dette stadige - det er ok at den er lidt klumpet."
+  - "Hæld blandingen i de muffinsformene og bag dem i 20-25 minutter. Afkøl på en rist."
+tips:
+---

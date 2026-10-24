@@ -1,0 +1,50 @@
+---
+title: "Chokolade muffins med banan"
+slug: chokolademuffins-med-banan
+published: 2012-08-19
+yield: 12
+tempC: 200
+timeMin: "25-30"
+intro: "Banan og mørk chokolade med pecan- eller valnødder. Bananen giver fugtighed, nødderne giver struktur."
+ingredients:
+  - amount: "250"
+    unit: "g"
+    name: "hvedemel"
+  - amount: "75"
+    unit: "g"
+    name: "Pecan/valnødder"
+  - amount: "125"
+    unit: "g"
+    name: "rørsukker"
+  - amount: "100"
+    unit: "g"
+    name: "mørk chokolade"
+  - amount: "50"
+    unit: "g"
+    name: "smeltet smør"
+  - amount: "1"
+    unit: "tsk"
+    name: "bagepulver"
+  - amount: "1"
+    unit: "stk"
+    name: "æg"
+  - amount: "½"
+    unit: "dl"
+    name: "ahornsirup"
+  - amount: "2½"
+    unit: "dl"
+    name: "letmælk"
+  - amount: "1"
+    unit: "stk"
+    name: "banan"
+  - amount: "12"
+    unit: "stk"
+    name: "muffinsforme"
+steps:
+  - "Bland mel og bagepulver sammen, tilsæt fintmalede pecannødder og rørsukker"
+  - "Pisk æg, ahornsirup, mælk og smeltet smør, og rør det godt sammen med de tørre ingredienser"
+  - "Vend banan- og chokoladestykker i"
+  - "Dejen kommes i 12 smurte muffinsforme. Hvis der bruges papirforme, så kom 2-3 stk. oven på hinanden, så dejen ikke vælter ud"
+  - "Bages ved 200° C i 25-30 minutter"
+tips:
+---

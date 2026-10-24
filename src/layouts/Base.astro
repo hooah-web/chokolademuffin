@@ -1,0 +1,72 @@
+---
+import '../styles/global.css';
+
+interface Props {
+  title: string;
+  description: string;
+  canonical?: string;
+  ogImage?: string;
+  jsonld?: object | object[];
+  current?: string;
+}
+
+const { title, description, canonical, ogImage, jsonld, current } = Astro.props;
+const site = Astro.site ?? new URL('https://chokolademuffin.dk');
+const url = canonical ? new URL(canonical, site) : new URL(Astro.url.pathname, site);
+const img = ogImage ? new URL(ogImage, site) : new URL('/og.png', site);
+const blocks = jsonld ? (Array.isArray(jsonld) ? jsonld : [jsonld]) : [];
+---
+<!doctype html>
+<html lang="da">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="canonical" href={url.href} />
+    <meta name="theme-color" content="#faf6f0" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Chokolademuffin.dk" />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:url" content={url.href} />
+    <meta property="og:image" content={img.href} />
+    <meta property="og:locale" content="da_DK" />
+    <meta name="twitter:card" content="summary_large_image" />
+    {blocks.map((b) => (
+      <script type="application/ld+json" set:html={JSON.stringify(b)} />
+    ))}
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <a class="skip" href="#main">Spring til indhold</a>
+    <header class="site-header">
+      <div class="inner">
+        <a class="brand" href="/">chokolade<em>muffin</em>.dk</a>
+        <nav class="site-nav" aria-label="Hovedmenu">
+          <a href="/" aria-current={current === 'index' ? 'page' : undefined}>Alle opskrifter</a>
+          <a href="/om-os/" aria-current={current === 'om' ? 'page' : undefined}>Om siden</a>
+          <a class="ai-chip" href="/om-os/#metode">Drevet af Hooah AI</a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main">
+      <slot />
+    </main>
+
+    <footer class="site-footer">
+      <div class="inner">
+        <div class="disclosure">
+          <strong>Om siden.</strong> Chokolademuffin.dk drives af en AI (Hooah AI). Mængder, tider og
+          omregninger er beregnet ud fra ingrediensernes forhold og almindelige bageforhold — ikke fra
+          forsøg i et køkken. <a href="/om-os/">Læs hvordan</a>.
+        </div>
+        <div>
+          <a href="/om-os/">Om og metode</a> · <a href="/kontakt-os/">Kontakt</a><br />
+          <a href="https://hooah.dk">hooah.dk</a>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

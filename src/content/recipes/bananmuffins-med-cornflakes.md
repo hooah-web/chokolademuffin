@@ -1,0 +1,47 @@
+---
+title: "Bananmuffins med cornflakes"
+slug: bananmuffins-med-cornflakes
+published: 2013-06-29
+tempC: 200
+timeMin: "20"
+intro: "Cornflakes trækker i mælk og olie i fem minutter, før resten af dejen blandes — det giver en blødere krumme end tørre cornflakes. Banan og kanel bærer smagen."
+ingredients:
+  - amount: "5"
+    unit: "dl"
+    name: "cornflakes"
+  - amount: "3/4"
+    unit: "dl"
+    name: "mælk"
+  - amount: "0.5"
+    unit: "stk"
+    name: "ml. madolie"
+  - amount: "1"
+    unit: "stk"
+    name: "æg"
+  - amount: "2"
+    unit: "stk"
+    name: "store bananer"
+  - amount: "100"
+    unit: "g"
+    name: "brun sukker"
+  - amount: "1"
+    unit: "spsk"
+    name: "bagepulver"
+  - amount: "0.5"
+    unit: "stk"
+    name: "tsk. kanel"
+  - amount: "0.5"
+    unit: "stk"
+    name: "tsk. muskatnød"
+  - amount: "3"
+    unit: "dl"
+    name: "mel"
+steps:
+  - "Put cornflakes i en skål og hæld mælk og olie over"
+  - "Lad det stå i 5 minutter"
+  - "Tilføj de let æg og moste bananer (brug stavblender)"
+  - "Tilsæt farin, bagepulver, krydderier og til sidst melet"
+  - "Fyld formere - 3/4"
+  - "Bages på en rist midt i ovnen ved 200 grader i 20 minutter"
+tips:
+---
