@@ -20,6 +20,7 @@ const blocks = jsonld ? (Array.isArray(jsonld) ? jsonld : [jsonld]) : [];
 // build, så preview-deploys på feature-branches ikke genererer ugyldige visninger.
 // Lokalt build (ingen variabel) regnes som produktion, men localhost viser ikke annoncer.
 const adsEnabled = (process.env.CF_PAGES_BRANCH ?? 'main') === 'main';
+const rumToken = '74f3e61e06b040cc999456d29415f29a';
 const adsPublisher = 'ca-pub-7973118635555368';
 ---
 <!doctype html>
@@ -76,6 +77,27 @@ const adsPublisher = 'ca-pub-7973118635555368';
           crossorigin="anonymous"
         ></script>
       </>
+    )}
+    {adsEnabled && (
+      <script is:inline define:vars={{ rumToken }}>
+        // Cloudflare Web Analytics — cookieless, aggregat. Indlæses ikke hvis
+        // browseren er markeret som intern (?intern=1), så vi ikke tæller os selv.
+        (function () {
+          try {
+            var p = new URLSearchParams(location.search);
+            if (p.get('intern') === '1') localStorage.setItem('hooah-intern', '1');
+            if (p.get('intern') === '0') localStorage.removeItem('hooah-intern');
+            if (localStorage.getItem('hooah-intern') === '1') return;
+          } catch (e) {
+            // localStorage kan være blokeret — så måler vi bare
+          }
+          var s = document.createElement('script');
+          s.defer = true;
+          s.src = 'https://static.cloudflareinsights.com/beacon.min.js';
+          s.setAttribute('data-cf-beacon', JSON.stringify({ token: rumToken }));
+          document.head.appendChild(s);
+        })();
+      </script>
     )}
   </head>
   <body>
