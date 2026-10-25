@@ -24,9 +24,10 @@ const publisher = 'ca-pub-7973118635555368';
   enabled && (
     <div class="adslot" style={`--ad-w:${width}px;--ad-h:${height}px`}>
       <div class="adslot-label">{label}</div>
-      {/* Rammen holder højden, også når AdSense kollapser <ins> til 0 px ved "unfilled".
-          Uden den ville siden hoppe, når en annonce senere udfyldes. */}
-      <div class="adslot-frame" style={`width:${width}px;height:${height}px`}>
+      {/* AdSense sætter height:0 på annoncens forældreelement ved "unfilled".
+          Derfor ligger pladsen som min-height i CSS — det slår igennem over for
+          en inline højde og holder layoutet fast. */}
+      <div class="adslot-space">
         <ins
           class="adsbygoogle"
           style={`display:block;width:${width}px;height:${height}px`}
@@ -67,13 +68,14 @@ const publisher = 'ca-pub-7973118635555368';
     height: 1px;
     background: var(--line);
   }
-  .adslot-frame {
+  .adslot-space {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: var(--ad-w);
+    min-height: var(--ad-h);
     max-width: 100%;
     overflow: hidden;
-    /* Ingen synlig ramme: en tom plads skal ikke se ud som en fejl på siden. */
   }
   .adslot :global(ins.adsbygoogle) {
     max-width: 100%;
