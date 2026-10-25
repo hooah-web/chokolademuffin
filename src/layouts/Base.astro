@@ -15,6 +15,12 @@ const site = Astro.site ?? new URL('https://chokolademuffin.dk');
 const url = canonical ? new URL(canonical, site) : new URL(Astro.url.pathname, site);
 const img = ogImage ? new URL(ogImage, site) : new URL('/og.png', site);
 const blocks = jsonld ? (Array.isArray(jsonld) ? jsonld : [jsonld]) : [];
+
+// Annoncer må kun ligge i produktion. Cloudflare Pages sætter CF_PAGES_BRANCH ved
+// build, så preview-deploys på feature-branches ikke genererer ugyldige visninger.
+// Lokalt build (ingen variabel) regnes som produktion, men localhost viser ikke annoncer.
+const adsEnabled = (process.env.CF_PAGES_BRANCH ?? 'main') === 'main';
+const adsPublisher = 'ca-pub-7973118635555368';
 ---
 <!doctype html>
 <html lang="da">
@@ -37,6 +43,40 @@ const blocks = jsonld ? (Array.isArray(jsonld) ? jsonld : [jsonld]) : [];
       <script type="application/ld+json" set:html={JSON.stringify(b)} />
     ))}
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    {adsEnabled && (
+      <>
+        {/* Googles certificerede CMP (Privacy & messaging). Den skal indlæses før annoncer. */}
+        <script
+          is:inline
+          async
+          src="https://fundingchoicesmessages.google.com/i/pub-7973118635555368?ers=1"
+        ></script>
+        <script is:inline>
+          (function () {
+            function signalGooglefcPresent() {
+              if (!window.frames['googlefcPresent']) {
+                if (document.body) {
+                  const iframe = document.createElement('iframe');
+                  iframe.style = 'width: 0; height: 0; border: none; z-index: -1000; left: -1000px; top: -1000px;';
+                  iframe.style.display = 'none';
+                  iframe.name = 'googlefcPresent';
+                  document.body.appendChild(iframe);
+                } else {
+                  setTimeout(signalGooglefcPresent, 0);
+                }
+              }
+            }
+            signalGooglefcPresent();
+          })();
+        </script>
+        <script
+          is:inline
+          async
+          src={`https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=${adsPublisher}`}
+          crossorigin="anonymous"
+        ></script>
+      </>
+    )}
   </head>
   <body>
     <a class="skip" href="#main">Spring til indhold</a>
