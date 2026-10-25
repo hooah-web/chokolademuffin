@@ -1,0 +1,99 @@
+---
+import Base from '../layouts/Base.astro';
+
+const updated = '24. oktober 2026';
+
+const ld = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: 'Privatlivspolitik',
+  url: 'https://chokolademuffin.dk/privatlivspolitik/',
+  inLanguage: 'da-DK',
+  dateModified: '2026-10-24',
+};
+---
+<Base
+  title="Privatlivspolitik — Chokolademuffin.dk"
+  description="Chokolademuffin.dk sætter ingen cookies, kører ingen tracking og indsamler ingen personoplysninger. Her står præcis hvad der sker med dine data."
+  canonical="/privatlivspolitik/"
+  jsonld={ld}
+>
+  <article class="wrap" style="padding-top:34px">
+    <p class="kicker">Privatliv · Opdateret {updated}</p>
+    <h1>Privatlivspolitik</h1>
+    <p class="lede">
+      Kort version: vi indsamler ingenting om dig. Der er ingen cookies, ingen tracking, ingen
+      annoncer og ingen formularer på dette site. Det lange svar står nedenfor.
+    </p>
+
+    <h2>Hvilke oplysninger vi indsamler</h2>
+    <p>
+      <strong>Ingen.</strong> Siden er statisk HTML. Der er ingen brugerkonti, ingen login, ingen
+      kommentarfelt, ingen nyhedsbrev og ingen formularer. Vi spørger aldrig om navn, mail eller
+      andet, og vi har ingen database at gemme det i.
+    </p>
+
+    <h2>Cookies og lokal lagring</h2>
+    <p>
+      Siden sætter <strong>ingen cookies</strong> og bruger ikke lokal lagring i browseren. Derfor
+      ser du heller ikke et samtykkebanner — der er intet at give samtykke til.
+    </p>
+    <p>
+      Søge- og filterfunktionen på forsiden kører udelukkende i din browser. Det, du skriver i
+      felterne, forlader aldrig din maskine og gemmes ikke.
+    </p>
+
+    <h2>Hosting og tekniske logfiler</h2>
+    <p>
+      Siden leveres af <strong>Cloudflare Pages</strong>. Cloudflare behandler de tekniske data, der
+      følger med enhver webanmodning — IP-adresse, tidspunkt, browser og den ønskede adresse — for
+      at kunne levere siden og beskytte den mod misbrug og angreb. Det er en nødvendig del af at
+      drive en hjemmeside, og behandlingen sker hos Cloudflare efter deres egne vilkår og
+      databehandleraftale. Vi har ikke adgang til at koble de logfiler til en enkelt person, og vi
+      bruger dem ikke til statistik eller markedsføring.
+    </p>
+
+    <h2>Ingen sporing, ingen annoncer</h2>
+    <p>
+      Der er ingen Google Analytics, ingen pixels, ingen annoncenetværk og ingen tredjepartsscripts
+      på siden. Vi måler ikke, hvem du er, hvor du kommer fra, eller hvad du klikker på.
+    </p>
+
+    <h2>Billeder og indhold</h2>
+    <p>
+      Billederne på siden er AI-genererede illustrationer og er mærket som sådan. Opskrifterne er
+      beregnede og beskrevet i <a href="/om-os/">om siden og metoden</a>.
+    </p>
+
+    <h2>Links til andre sider</h2>
+    <p>
+      Siden linker til andre websites, blandt andet <a href="https://hooah.dk">hooah.dk</a>. Når du
+      følger et link, gælder den anden sides privatlivspolitik — ikke denne.
+    </p>
+
+    <h2>Dine rettigheder</h2>
+    <p>
+      Efter databeskyttelsesforordningen har du ret til indsigt, rettelse, sletning og begrænsning af
+      behandling af dine personoplysninger. Da vi ikke indsamler eller opbevarer personoplysninger om
+      dig, er der i praksis intet at give indsigt i eller slette. Skulle du alligevel mene, at vi
+      ligger inde med noget om dig, kan du skrive til os — se kontakt nedenfor.
+    </p>
+
+    <h2>Ændringer</h2>
+    <p>
+      Ændrer sidens tekniske opsætning sig — for eksempel hvis der kommer annoncer eller statistik
+      til — bliver denne side opdateret, <em>før</em> ændringen træder i kraft. Datoen øverst viser,
+      hvornår den sidst blev ændret.
+    </p>
+
+    <h2>Kontakt</h2>
+    <p>
+      Chokolademuffin.dk drives af <strong>Hooah AI</strong>. Firmaoplysninger og kontaktveje findes
+      på <a href="https://hooah.dk">hooah.dk</a>.
+    </p>
+
+    <p class="kicker" style="margin-top:34px">
+      <a href="/">Alle opskrifter</a> · <a href="/om-os/">Om siden og metoden</a> · <a href="/kontakt-os/">Kontakt</a>
+    </p>
+  </article>
+</Base>
