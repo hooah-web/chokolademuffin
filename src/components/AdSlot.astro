@@ -24,12 +24,16 @@ const publisher = 'ca-pub-7973118635555368';
   enabled && (
     <div class="adslot" style={`--ad-w:${width}px;--ad-h:${height}px`}>
       <div class="adslot-label">{label}</div>
-      <ins
-        class="adsbygoogle"
-        style={`display:inline-block;width:${width}px;height:${height}px`}
-        data-ad-client={publisher}
-        data-ad-slot={slot}
-      />
+      {/* Rammen holder højden, også når AdSense kollapser <ins> til 0 px ved "unfilled".
+          Uden den ville siden hoppe, når en annonce senere udfyldes. */}
+      <div class="adslot-frame" style={`width:${width}px;height:${height}px`}>
+        <ins
+          class="adsbygoogle"
+          style={`display:block;width:${width}px;height:${height}px`}
+          data-ad-client={publisher}
+          data-ad-slot={slot}
+        />
+      </div>
       <script is:inline>
         (adsbygoogle = window.adsbygoogle || []).push({});
       </script>
@@ -62,6 +66,14 @@ const publisher = 'ca-pub-7973118635555368';
     flex: 1;
     height: 1px;
     background: var(--line);
+  }
+  .adslot-frame {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    overflow: hidden;
+    /* Ingen synlig ramme: en tom plads skal ikke se ud som en fejl på siden. */
   }
   .adslot :global(ins.adsbygoogle) {
     max-width: 100%;
