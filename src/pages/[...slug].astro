@@ -1,5 +1,6 @@
 ---
 import Base from '../layouts/Base.astro';
+import AdSlot from '../components/AdSlot.astro';
 import { allRecipes, imagePath, related, parseAmount, formatAmount } from '../lib/recipes';
 
 export function getStaticPaths() {
@@ -94,6 +95,8 @@ const facts = [
       </div>
     </div>
 
+    <AdSlot slot="4261108764" width={336} height={280} />
+
     <h2>Ingredienser</h2>
     {recipe.equipment.length > 0 && (
       <p class="kicker" style="margin:-4px 0 14px">
@@ -143,6 +146,8 @@ const facts = [
         {recipe.tips.map((t) => <p>{t}</p>)}
       </aside>
     )}
+
+    <AdSlot slot="6081641191" width={300} height={600} />
 
     <h2>Læs videre</h2>
     <ul class="grid">

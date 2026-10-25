@@ -1,0 +1,76 @@
+---
+/**
+ * Fast annonceplads med reserveret højde.
+ *
+ * Højden er låst, så layoutet ikke flytter sig, når annoncen indlæses eller
+ * ikke udfyldes. Det er hele pointen med faste enheder frem for Auto ads.
+ *
+ * Annoncerne vises kun i produktion (CF_PAGES_BRANCH=main), så preview-deploys
+ * ikke genererer ugyldige visninger.
+ */
+interface Props {
+  slot: string;
+  width: number;
+  height: number;
+  label?: string;
+}
+
+const { slot, width, height, label = 'Annonce' } = Astro.props;
+const enabled = (process.env.CF_PAGES_BRANCH ?? 'main') === 'main';
+const publisher = 'ca-pub-7973118635555368';
+---
+
+{
+  enabled && (
+    <div class="adslot" style={`--ad-w:${width}px;--ad-h:${height}px`}>
+      <div class="adslot-label">{label}</div>
+      <ins
+        class="adsbygoogle"
+        style={`display:inline-block;width:${width}px;height:${height}px`}
+        data-ad-client={publisher}
+        data-ad-slot={slot}
+      />
+      <script is:inline>
+        (adsbygoogle = window.adsbygoogle || []).push({});
+      </script>
+    </div>
+  )
+}
+
+<style>
+  .adslot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 32px 0;
+    max-width: 100%;
+  }
+  .adslot-label {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 8px;
+    font-family: var(--mono);
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--muted);
+  }
+  .adslot-label::after {
+    content: '';
+    flex: 1;
+    height: 1px;
+    background: var(--line);
+  }
+  .adslot :global(ins.adsbygoogle) {
+    max-width: 100%;
+    background: transparent;
+  }
+  @media (max-width: 420px) {
+    .adslot :global(ins.adsbygoogle) {
+      width: 100% !important;
+      max-width: var(--ad-w);
+    }
+  }
+</style>
