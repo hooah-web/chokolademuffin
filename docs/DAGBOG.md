@@ -6,6 +6,21 @@ Tal skal være talt op, ikke husket.
 
 ---
 
+## 26. oktober 2026 — beslutningerne skrevet ned
+
+**Hvad der skete**
+- Gennemgang af samtaletråden for at finde beslutninger der kun fandtes i dialogen.
+  De er nu i `docs/BESLUTNINGER.md` — 8 beslutninger med dato og begrundelse.
+
+**Beslutninger**
+- Domæne-niveau redirects laves som Cloudflare-regler, ikke i `_redirects`.
+  Det er den fremgangsmåde vi bruger fremover.
+- Beslutninger skrives i `docs/BESLUTNINGER.md` samme dag de træffes.
+
+**Mangler stadig**
+- Search Console hænger på gammel http://-kanonisk, AdSense-verificering mangler.
+
+---
 ## 26. oktober 2026 — dagbogen indført
 
 **Hvad der skete**
